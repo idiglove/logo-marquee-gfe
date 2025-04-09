@@ -1,5 +1,11 @@
 @import 'tailwindcss';
 
+img {
+	width: 218px;
+	height: auto;
+	max-width: none;
+}
+
 .animate-loop {
 	animation: loop 30s linear infinite;
 }

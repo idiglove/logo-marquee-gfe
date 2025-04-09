@@ -1,10 +1,8 @@
 <h1>Logo Marquee</h1>
-<!-- animate-loop -->
-<!-- transform-x-[100%] -->
 
-<div class="mx-auto w-full max-w-[1280px] overflow-hidden">
-	<div class="relative mx-auto flex h-16 gap-8" style="width: 200%">
-		<div class="animate-loop flex w-full justify-between gap-4">
+<div class="overflow-hidden">
+	<div class="flex h-16" style="width: 200%;">
+		<div class="animate-loop flex gap-4">
 			<img
 				src="https://vaqybtnqyonvlwtskzmv.supabase.co/storage/v1/object/public/projects-images/logo-marquee-section/starter/img/wan-nain.svg"
 				alt="Wan Nain's logo"
@@ -38,8 +36,7 @@
 				alt="Bitterfly's logo"
 			/>
 		</div>
-
-		<div class="animate-loop flex w-full justify-between gap-4">
+		<div class="animate-loop flex gap-4">
 			<img
 				src="https://vaqybtnqyonvlwtskzmv.supabase.co/storage/v1/object/public/projects-images/logo-marquee-section/starter/img/wan-nain.svg"
 				alt="Wan Nain's logo"
