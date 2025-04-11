@@ -19,10 +19,10 @@ img {
 	}
 }
 
-.paused {
+.paused .animate-loop {
 	animation-play-state: paused;
 }
 
-.playing {
+.playing .animate-loop {
 	animation-play-state: running;
 }
