@@ -33,13 +33,21 @@
 			alt: "Bitterfly's logo"
 		}
 	];
+
+	let isPaused = false;
+
+	const onMarqueeClick = () => {
+		isPaused = !isPaused;
+	};
 </script>
 
 <h1 class="py-4 text-center text-2xl">Companies</h1>
 
 <div class="mx-auto overflow-hidden lg:max-w-[1280px]">
-	<div class="flex h-16" style="width: 200%;">
-		<div class="animate-loop flex gap-4">
+	<!-- svelte-ignore a11y_click_events_have_key_events -->
+	<!-- svelte-ignore a11y_no_static_element_interactions -->
+	<div class="flex h-16" style="width: 200%;" onclick={onMarqueeClick}>
+		<div class={`animate-loop flex gap-4 ${isPaused ? 'paused' : 'playing'}`}>
 			{#each logos as logo}
 				<img src={logo.src} alt={logo.alt} loading="lazy" />
 			{/each}

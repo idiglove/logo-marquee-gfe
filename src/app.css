@@ -18,3 +18,11 @@ img {
 		transform: translateX(calc(-100% - 16px));
 	}
 }
+
+.paused {
+	animation-play-state: paused;
+}
+
+.playing {
+	animation-play-state: running;
+}
